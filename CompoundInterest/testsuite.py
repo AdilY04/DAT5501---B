@@ -1,5 +1,5 @@
 import unittest
-from functions import compound_interest
+from CompoundInterest.functions import compound_interest
 
 
 class CompoundInterestTesting(unittest.TestCase):
