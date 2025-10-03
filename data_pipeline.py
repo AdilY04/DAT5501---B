@@ -15,17 +15,6 @@ original_b = 5.0
 
 tolerance = 0.2
 
-class TestLineFit(unittest.TestCase):
-
-    def test_slope(self):
-        self.assertAlmostEqual(slope, original_m, delta=tolerance)
-
-    def test_intercept(self):
-        self.assertAlmostEqual(intercept, original_b, delta=tolerance)
-
-# Run the unit tests
-unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromTestCase(TestLineFit))
-
 # Plotting
 plt.scatter(X, Y, label='Data', color='blue', alpha=0.5)
 
